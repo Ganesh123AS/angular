@@ -1,13 +1,36 @@
 <div class="swiper">
-  <div class="swiper-inner" [ngStyle]="{'transform': 'translateX(-' + infiniteIndex * 100 + '%)'}">
-    <div *ngFor="let item of productsList; let i = index" class="swiper-item" [ngClass]="{'active': i === infiniteIndex}">
+  <div
+    class="swiper-inner"
+    [ngStyle]="{'transform': 'translateX(-' + infiniteIndex * 100 + '%)'}"
+  >
+    <div
+      *ngFor="let item of productsList; let i = index"
+      class="swiper-item"
+      [ngClass]="{'active': i === infiniteIndex}"
+    >
       <div class="swiper-container">
-        <img [src]="item.image" [alt]="item.name" />
-        <h5>{{ item.name }}</h5>
-        <button class="add-btn btn-primary" (click)="addToCart(item)">Add to Cart</button>
+        <div style="width: cover; height: 200px;">
+          <img [src]="item.image" [alt]="item.name" />
+        </div>
+        <div style="padding: 16px;">
+          <div
+            style="display: flex; justify-content: space-between; padding: 6px;"
+          >
+            <div style="font-size: 16px;font-weight: bold;">{{ item.name }}</div>
+            <div style="font-size: 16px;font-weight: bold;">$ {{ item.price }} only</div>
+          </div>
+          <div class="desc">{{ item.description }}</div>
+          <button class="add-btn btn-primary" (click)="addToCart(item)">
+            Add to Cart
+          </button>
+        </div>
       </div>
     </div>
   </div>
-  <button class="btn prev-btn" (click)="prevItem()"><i class="fa-solid fa-chevron-left"></i></button>
-  <button class="btn next-btn" (click)="nextItem()"><i class="fa-solid fa-chevron-right"></i></button>
+  <button class="btn prev-btn" (click)="prevItem()">
+    <i class="fa-solid fa-chevron-left"></i>
+  </button>
+  <button class="btn next-btn" (click)="nextItem()">
+    <i class="fa-solid fa-chevron-right"></i>
+  </button>
 </div>
