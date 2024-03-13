@@ -1,6 +1,17 @@
 # Angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4.
+# to run the file
+ - copy the git repository
+ - clone the repository
+ - ng serve
+ - file will run
+ - port will be 4200 deafult
+# latest deployment or changes will be in develop branch & main is the stable version
+
+# for node >=16.1 or facing issues with webpack or lsib
+ - npm install webpack-dev-server@latest --save-dev npm install querystring@latest --save
+ - for lsib you may have to change package.json of node_modles>lsib to this    "./*": "./"
 
 ## Development server
 
