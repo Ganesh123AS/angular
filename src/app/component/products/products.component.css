@@ -1,47 +1,46 @@
 .swiper {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .swiper-inner {
-    display: flex;
-    transition: transform 0.3s ease;
-  }
-  
-  .swiper-item {
-    flex: 0 0 auto;
-    width: 33.333%;
-    text-align: center;
-    transition: width 0.3s ease;
-  }
-  
-  .swiper-item.active {
-    width: 60%;
-  }
-  
-  .swiper-container {
-    position: relative;
-  }
-  
-  .swiper-container img {
-    width: 100px;
-    height: 100px;
-  }
-  
-  .btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .prev-btn {
-    left: 0;
-  }
-  
-  .next-btn {
-    right: 0;
-  }
-  
+  position: relative;
+  overflow: hidden;
+}
+
+.swiper-inner {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.swiper-item {
+  flex: 0 0 auto;
+  width: 33.333%;
+  text-align: center;
+  transition: width 0.3s ease;
+}
+
+.swiper-item.active {
+  width: 60%;
+}
+
+.swiper-container {
+  position: relative;
+}
+
+.swiper-container img {
+  width: 100px;
+  height: 100px;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.prev-btn {
+  left: 0;
+}
+
+.next-btn {
+  right: 0;
+}
