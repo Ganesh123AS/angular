@@ -14,6 +14,4 @@ export class CartService {
   getProducts() {
     return this.http.get<any[]>('your_api_endpoint_here');
   }
-
-  // Implement other methods like addToCart, removeCartItem, etc. as per your requirements
 }
